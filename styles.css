@@ -149,3 +149,11 @@ a{
 a:hover {
     color:white;
 }
+
+.lucky{
+    display: none;
+}
+
+.unlucky{
+    display: none;
+}
