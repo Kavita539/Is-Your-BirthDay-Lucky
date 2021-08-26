@@ -4,12 +4,19 @@ const checkNumberButton = document.querySelector("#check-num");
 const outputBox = document.querySelector("#output-box");
 var crossIcon= document.querySelector(".cross");
 var noteDiv= document.querySelector(".note");
+var luckyDiv= document.querySelector(".lucky");
+var unluckyDiv= document.querySelector(".unlucky");
+
 
 function compareValues(sum,luckyNumber){
     if(sum%luckyNumber===0){
-        outputBox.innerText="Yay! Yor birthday is lucky";
+        outputBox.innerText="Yay! Your birthday is lucky";
+        luckyDiv.style.display="block";
+        unluckyDiv.style.display="none";
     }else{
         outputBox.innerText="Oops! Your birthday is not lucky";
+        unluckyDiv.style.display="block";
+        luckyDiv.style.display="none";
     }
 }
 
