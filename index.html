@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,40 +11,41 @@
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <nav>
         <div class="brand">KayPeeCodes</div>
-        <div><a target="_blank" href="https://kavita-pathak-portfolio.netlify.app/"><i class="fa fa-briefcase" aria-hidden="true"></i></a></div>
+        <div><a target="_blank" href="https://kavita-pathak-portfolio.netlify.app/"><i class="fa fa-briefcase"
+                    aria-hidden="true"></i></a></div>
     </nav>
-<header class="main">    
+    <header class="main">
         <h1>Is your Birthday Lucky? </h1>
         <p>Enter your Date of Birth and your Lucky Number and check whether your birthday is lucky or not.</p>
 
         <div class="note">
-           <p><span class="privacy">Privacy: </span>We dont store any of your information.</p>
+            <p><span class="privacy">Privacy: </span>We dont store any of your information.</p>
             <div class="cross"><i class="fas fa-times"></i></div>
         </div>
 
         <img style="width: 300px;" src="/images/birthday.png" alt="">
 
         <div class="container">
-            <label for="date-of-birth">Date Of Birth:</label>
-            <input type="date" id="date-of-birth"> <br>
-            <label for="lucky-num">Enter your Lucky Number:</label>
-            <input type="number" id="lucky-num"> <br>
-            <button id="check-num">Check</button>
+            <form id="form">
+                <label for="date-of-birth">Date Of Birth:</label>
+                <input type="date" id="date-of-birth" required /> <br>
+                <label for="lucky-num">Enter your Lucky Number:</label>
+                <input type="number" id="lucky-num" min="1" step="1" required /> <br>
+                <button id="check-num" type="submit">Check</button>
+            </form>
             <div id="output-box"></div>
-        </div>
+            <div class="lucky">
+                <img style="width: 200px; background: transparent;" src="images/happy pom pom.gif" alt="">
+            </div>
 
-        <div class="lucky">
-            <!-- <div id="output-box"></div> -->
-            <img style="width: 200px; background: transparent;" src="images/happy pom pom.gif" alt="">
+            <div class="unlucky">
+                <img style="width: 200px; background: transparent;" src="images/wrong-sad.gif" alt="">
+            </div>
 
-        </div>
-
-        <div class="unlucky">
-            <!-- <div id="output-box"></div> -->
-            <img style="width: 200px; background: transparent;" src="images/wrong-sad.gif" alt="">
         </div>
 
     </header>
@@ -58,12 +60,12 @@
                         class="fab fa-linkedin-in"></i></a>
             </li>
             <li class="">
-                <a class="" target="_blank" href="https://twitter.com/KavitaP_03"><i
-                    class="fab fa-twitter"></i></a>
+                <a class="" target="_blank" href="https://twitter.com/KavitaP_03"><i class="fab fa-twitter"></i></a>
             </li>
         </ul>
     </footer>
-    
+
     <script src="app.js"></script>
 </body>
+
 </html>
